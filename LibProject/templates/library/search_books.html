@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+    <h1>Search Books</h1>
+    <form method="get" class="search-form">
+        <input type="text" name="query" value="{{ query }}" placeholder="Search by title or author">
+        <button type="submit">Search</button>
+    </form>
+    <ul>
+        {% for book in books %}
+            <li>{{ book.title }} by {{ book.authors }}</li>
+        {% empty %}
+            <li>No books found.</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'book_list' %}">Back to Book List</a>
+</body>
+</html>

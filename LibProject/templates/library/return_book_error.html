@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+    <h1>Return Book Error</h1>
+    <p>Sorry, there was an error while processing the return of "{{ transaction.book.title }}".</p>
+    <a href="{% url 'book_list' %}">Back to Book List</a>
+</body>
+</html>

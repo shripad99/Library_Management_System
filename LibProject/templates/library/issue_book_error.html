@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library - Error</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+    <h1>Issue Book Error</h1>
+    <p>Sorry, the book "{{ book.title }}" is not available for issue at the moment. It may be out of stock.</p>
+    <a href="{% url 'book_list' %}">Back to Book List</a>
+</body>
+</html>

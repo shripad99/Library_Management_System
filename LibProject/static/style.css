@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    background-color: #64CCC5;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    margin:10px;
+    color:#ffffff;
+}
+.book-title{
+    text-align: center;
+    margin: 20px;
+}
+ul li{
+    padding:15px 10px;
+    border:1px solid #ccc;
+    list-style:none;
+    background:#fff;
+    margin:5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+a{
+    border:1px solid black;
+    text-decoration:none;
+    padding:10px 20px;
+    margin-top: 20px;
+    background:#fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.book-form{
+    border:5px solid #D2DE32;
+    padding: 20px;
+    background:#fff;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.book-form p{
+    padding:10px 30px;
+}
+.book-form input,select{
+    width:100%;
+    padding:10px 20px;
+}
+.btn{
+    display:flex;
+    justify-content:center;
+}
+.btn button{
+    margin-top: 20px;
+    padding:10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.search-form input{
+    width:100%;
+    padding:10px 20px;
+    margin: 10px 10px;
+}
+.search-form input{
+    width: 250px;
+}
+.search-form{
+    display:flex;
+}

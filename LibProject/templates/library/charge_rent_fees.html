@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library - Charge Rent Fees</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+    <h1>Charge Rent Fees</h1>
+    <p>Member Name: {{ member.name }}</p>
+    <p>Email: {{ member.email }}</p>
+    <p>Total Rent Fee Charged: ${{ total_rent_fee }}</p>
+    <a href="{% url 'member_list' %}">Back to Member List</a>
+</body>
+</html>

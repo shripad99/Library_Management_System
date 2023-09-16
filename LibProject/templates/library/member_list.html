@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library - Member List</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+</head>
+<body>
+    <h1>Member List</h1>
+    <ul>
+        {% for mm in member %}
+            <li>{{ mm.name }}</li>
+            <li>{{ mm.email }}</li>
+            <li>{{ mm.outstanding_debt }}</li>
+        {% endfor %}
+    </ul>
+     <a href="{% url 'member_create' %}">Add New Member</a>
+</body>
+</html>
